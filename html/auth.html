@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - HACKLIDO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/cyberpunk.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-navbar navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/challenges.html"><i class="fas fa-flag me-1"></i>Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/news.html"><i class="fas fa-newspaper me-1"></i>News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/blog.html"><i class="fas fa-blog me-1"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/tutorials.html"><i class="fas fa-graduation-cap me-1"></i>Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/community.html"><i class="fas fa-users me-1"></i>Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/notifications.html"><i class="fas fa-bell me-1"></i>Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-join" href="../html/auth.html"><i class="fas fa-user-plus me-1"></i>Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Authentication Section -->
+    <section class="auth-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="auth-container">
+                        <div class="auth-header text-center mb-4">
+                            <h1 class="auth-title">Welcome to HACKLIDO</h1>
+                            <p class="auth-subtitle">Join our community of cybersecurity enthusiasts</p>
+                        </div>
+
+                        <!-- Auth Tabs -->
+                        <ul class="nav nav-tabs auth-tabs mb-4" id="authTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Register</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="authTabContent">
+                            <!-- Login Form -->
+                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                                <form class="auth-form">
+                                    <div class="mb-3">
+                                        <label for="loginEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="loginPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-auth">Login</button>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <a href="#" class="auth-link">Forgot password?</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Register Form -->
+                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                <form class="auth-form">
+                                    <div class="mb-3">
+                                        <label for="registerName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="registerName" placeholder="Enter your full name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="registerUsername" class="form-label">Username</label>
+                                        <input type="text" class="form-control" id="registerUsername" placeholder="Choose a username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="registerEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="registerPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="registerPassword" placeholder="Create a password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm your password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="termsAgree">
+                                        <label class="form-check-label" for="termsAgree">I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a></label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-auth">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Social Login -->
+                        <div class="auth-social mt-4">
+                            <p class="text-center mb-3">Or continue with</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <button class="btn btn-social">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                                <button class="btn btn-social">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                <button class="btn btn-social">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">
+                            <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="footer-logo">
+                        </h3>
+                        <p class="footer-desc">Your ultimate platform for learning cybersecurity, ethical hacking, and penetration testing. Join the community and level up your skills.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../html/blog.html">Blog</a></li>
+                            <li><a href="../html/tutorials.html">Tutorials</a></li>
+                            <li><a href="../html/community.html">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">CTF Challenges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Bug</a></li>
+                            <li><a href="advertise.html">Advertise</a></li>
+                            <li><a href="../html/sponsors.html">Our Sponsors</a></li>
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="../html/monetization.html">Monetization</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 HACKLIDO. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-tagline">Made with <i class="fas fa-heart text-danger"></i> by the HACKLIDO Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "hacklido",
+  "version": "1.0.0",
+  "description": "A cybersecurity community and learning platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "cybersecurity",
+    "ethical-hacking",
+    "penetration-testing",
+    "ctf",
+    "community"
+  ],
+  "author": "HACKLIDO Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.5.14"
+  }
+}

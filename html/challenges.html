@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges - HACKLIDO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/cyberpunk.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-navbar navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/challenges.html"><i class="fas fa-flag me-1"></i>Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/news.html"><i class="fas fa-newspaper me-1"></i>News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/blog.html"><i class="fas fa-blog me-1"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/tutorials.html"><i class="fas fa-graduation-cap me-1"></i>Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/community.html"><i class="fas fa-users me-1"></i>Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/notifications.html"><i class="fas fa-bell me-1"></i>Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-join" href="../html/auth.html"><i class="fas fa-user-plus me-1"></i>Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">Cybersecurity Challenges</h1>
+                    <p class="page-subtitle">Test your skills with our Capture The Flag (CTF) challenges</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Challenges</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Filter Section -->
+    <section class="challenge-filter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="filter-sidebar">
+                        <div class="widget">
+                            <h4 class="widget-title">Filters</h4>
+                            <div class="filter-group">
+                                <h5 class="filter-heading">Categories</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="web" checked>
+                                    <label class="form-check-label" for="web">Web Exploitation</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="crypto" checked>
+                                    <label class="form-check-label" for="crypto">Cryptography</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="forensics" checked>
+                                    <label class="form-check-label" for="forensics">Forensics</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="reverse" checked>
+                                    <label class="form-check-label" for="reverse">Reverse Engineering</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="binary" checked>
+                                    <label class="form-check-label" for="binary">Binary Exploitation</label>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <h5 class="filter-heading">Difficulty</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="beginner" checked>
+                                    <label class="form-check-label" for="beginner">Beginner</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="intermediate">
+                                    <label class="form-check-label" for="intermediate">Intermediate</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="advanced">
+                                    <label class="form-check-label" for="advanced">Advanced</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="expert">
+                                    <label class="form-check-label" for="expert">Expert</label>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <h5 class="filter-heading">Points</h5>
+                                <div class="range-slider">
+                                    <input type="range" class="form-range" min="0" max="500" step="10" value="100">
+                                    <div class="range-values d-flex justify-content-between">
+                                        <span>0 pts</span>
+                                        <span>500 pts</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Ad Banner -->
+                        <div class="ad-section mt-4">
+                            <div class="ad-banner">
+                                <p class="ad-label">Advertisement</p>
+                                <div class="ad-content">
+                                    <img src="https://via.placeholder.com/300x250/0e0e12/00f3ff?text=Ad+300x250" alt="Advertisement" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="challenge-header d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="section-title">Available Challenges</h2>
+                        <div class="challenge-sort">
+                            <select class="form-select">
+                                <option>Sort by Newest</option>
+                                <option>Sort by Popularity</option>
+                                <option>Sort by Difficulty</option>
+                                <option>Sort by Points</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Challenge Card 1 -->
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-meta">
+                                        <span class="badge difficulty-badge beginner">Beginner</span>
+                                        <span class="points">50 pts</span>
+                                    </div>
+                                    <div class="challenge-category">
+                                        <i class="bx bx-globe"></i> Web
+                                    </div>
+                                </div>
+                                <div class="challenge-body">
+                                    <h3>Login Bypass</h3>
+                                    <p>Can you bypass the login mechanism to access the admin panel? This challenge tests your understanding of basic authentication flaws.</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="bx bx-user"></i> 1.2K solvers</span>
+                                        <span><i class="bx bx-time"></i> 4 hours avg</span>
+                                    </div>
+                                </div>
+                                <div class="challenge-footer">
+                                    <a href="#" class="btn btn-challenge">Start Challenge</a>
+                                    <div class="challenge-tags">
+                                        <span class="tag">SQLi</span>
+                                        <span class="tag">Auth</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Card 2 -->
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-meta">
+                                        <span class="badge difficulty-badge intermediate">Intermediate</span>
+                                        <span class="points">150 pts</span>
+                                    </div>
+                                    <div class="challenge-category">
+                                        <i class="bx bx-lock"></i> Crypto
+                                    </div>
+                                </div>
+                                <div class="challenge-body">
+                                    <h3>RSA Weak Keys</h3>
+                                    <p>Factor the modulus of this RSA public key to recover the private key. This challenge requires knowledge of number theory and cryptography.</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="bx bx-user"></i> 420 solvers</span>
+                                        <span><i class="bx bx-time"></i> 8 hours avg</span>
+                                    </div>
+                                </div>
+                                <div class="challenge-footer">
+                                    <a href="#" class="btn btn-challenge">Start Challenge</a>
+                                    <div class="challenge-tags">
+                                        <span class="tag">RSA</span>
+                                        <span class="tag">Math</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Card 3 -->
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-meta">
+                                        <span class="badge difficulty-badge advanced">Advanced</span>
+                                        <span class="points">300 pts</span>
+                                    </div>
+                                    <div class="challenge-category">
+                                        <i class="bx bx-file"></i> Forensics
+                                    </div>
+                                </div>
+                                <div class="challenge-body">
+                                    <h3>Hidden in Plain Sight</h3>
+                                    <p>Analyze this memory dump to recover deleted files and extract hidden information. Requires advanced forensics tools and techniques.</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="bx bx-user"></i> 180 solvers</span>
+                                        <span><i class="bx bx-time"></i> 12 hours avg</span>
+                                    </div>
+                                </div>
+                                <div class="challenge-footer">
+                                    <a href="#" class="btn btn-challenge">Start Challenge</a>
+                                    <div class="challenge-tags">
+                                        <span class="tag">Memory</span>
+                                        <span class="tag">Stego</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Card 4 -->
+                        <div class="col-md-6">
+                            <div class="challenge-card">
+                                <div class="challenge-header">
+                                    <div class="challenge-meta">
+                                        <span class="badge difficulty-badge expert">Expert</span>
+                                        <span class="points">500 pts</span>
+                                    </div>
+                                    <div class="challenge-category">
+                                        <i class="bx bx-cpu"></i> Binary
+                                    </div>
+                                </div>
+                                <div class="challenge-body">
+                                    <h3>ROP Chain Master</h3>
+                                    <p>Exploit this binary with DEP enabled using Return Oriented Programming. A challenging exploit development task.</p>
+                                    <div class="challenge-stats">
+                                        <span><i class="bx bx-user"></i> 45 solvers</span>
+                                        <span><i class="bx bx-time"></i> 20 hours avg</span>
+                                    </div>
+                                </div>
+                                <div class="challenge-footer">
+                                    <a href="#" class="btn btn-challenge">Start Challenge</a>
+                                    <div class="challenge-tags">
+                                        <span class="tag">ROP</span>
+                                        <span class="tag">Exploit</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <nav aria-label="Challenge pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-section py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5">Top Challengers</h2>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Points</th>
+                                    <th scope="col">Challenges Solved</th>
+                                    <th scope="col">Last Active</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://via.placeholder.com/40x40/0e0e12/00f3ff?text=U" alt="User" class="rounded-circle me-2">
+                                            <strong>CyberNinja</strong>
+                                        </div>
+                                    </td>
+                                    <td>12,450</td>
+                                    <td>87</td>
+                                    <td>2 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://via.placeholder.com/40x40/0e0e12/00f3ff?text=U" alt="User" class="rounded-circle me-2">
+                                            <strong>ZeroDayHero</strong>
+                                        </div>
+                                    </td>
+                                    <td>11,890</td>
+                                    <td>82</td>
+                                    <td>5 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://via.placeholder.com/40x40/0e0e12/00f3ff?text=U" alt="User" class="rounded-circle me-2">
+                                            <strong>RootAccess</strong>
+                                        </div>
+                                    </td>
+                                    <td>10,750</td>
+                                    <td>76</td>
+                                    <td>1 day ago</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://via.placeholder.com/40x40/0e0e12/00f3ff?text=U" alt="User" class="rounded-circle me-2">
+                                            <strong>ByteBender</strong>
+                                        </div>
+                                    </td>
+                                    <td>9,820</td>
+                                    <td>71</td>
+                                    <td>3 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="https://via.placeholder.com/40x40/0e0e12/00f3ff?text=U" alt="User" class="rounded-circle me-2">
+                                            <strong>PentestPro</strong>
+                                        </div>
+                                    </td>
+                                    <td>8,950</td>
+                                    <td>65</td>
+                                    <td>6 hours ago</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="join" class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="cta-title">Ready to Test Your Skills?</h2>
+                    <p class="cta-text">Join our community of cybersecurity enthusiasts and start solving challenges today!</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="../html/contact.html" class="btn btn-cta btn-lg">
+                        <i class="fas fa-user-plus me-2"></i>Join HACKLIDO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">
+                            <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="footer-logo">
+                        </h3>
+                        <p class="footer-desc">Your ultimate platform for learning cybersecurity, ethical hacking, and penetration testing. Join the community and level up your skills.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../html/challenges.html">Challenges</a></li>
+                            <li><a href="../html/news.html">News</a></li>
+                            <li><a href="../html/blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">CTF Challenges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Bug</a></li>
+                            <li><a href="../html/advertise.html">Advertise</a></li>
+                            <li><a href="../html/sponsors.html">Our Sponsors</a></li>
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="../html/monetization.html">Monetization</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 HACKLIDO. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-tagline">Made with <i class="fas fa-heart text-danger"></i> by the HACKLIDO Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>

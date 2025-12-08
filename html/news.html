@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - HACKLIDO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/cyberpunk.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-navbar navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/challenges.html"><i class="fas fa-flag me-1"></i>Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/news.html"><i class="fas fa-newspaper me-1"></i>News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/blog.html"><i class="fas fa-blog me-1"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/tutorials.html"><i class="fas fa-graduation-cap me-1"></i>Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/community.html"><i class="fas fa-users me-1"></i>Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/notifications.html"><i class="fas fa-bell me-1"></i>Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-join" href="../html/auth.html"><i class="fas fa-user-plus me-1"></i>Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">Cybersecurity News</h1>
+                    <p class="page-subtitle">Stay updated with the latest in cybersecurity</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">News</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Filter Section -->
+    <section class="news-filter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="filter-sidebar">
+                        <div class="widget">
+                            <h4 class="widget-title">Categories</h4>
+                            <div class="category-list">
+                                <a href="#" class="category-item active">
+                                    <i class="bx bx-news"></i> All News
+                                    <span class="count">24</span>
+                                </a>
+                                <a href="#" class="category-item">
+                                    <i class="bx bx-bug"></i> Vulnerabilities
+                                    <span class="count">8</span>
+                                </a>
+                                <a href="#" class="category-item">
+                                    <i class="bx bx-shield"></i> Security Research
+                                    <span class="count">6</span>
+                                </a>
+                                <a href="#" class="category-item">
+                                    <i class="bx bx-world"></i> Industry News
+                                    <span class="count">5</span>
+                                </a>
+                                <a href="#" class="category-item">
+                                    <i class="bx bx-lock"></i> Data Breaches
+                                    <span class="count">3</span>
+                                </a>
+                                <a href="#" class="category-item">
+                                    <i class="bx bx-group"></i> Community
+                                    <span class="count">2</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="widget">
+                            <h4 class="widget-title">Popular Tags</h4>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag-item">Ransomware</a>
+                                <a href="#" class="tag-item">Zero-Day</a>
+                                <a href="#" class="tag-item">AI Security</a>
+                                <a href="#" class="tag-item">Cloud Security</a>
+                                <a href="#" class="tag-item">IoT</a>
+                                <a href="#" class="tag-item">Malware</a>
+                                <a href="#" class="tag-item">Privacy</a>
+                                <a href="#" class="tag-item">Compliance</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Ad Banner -->
+                        <div class="ad-section mt-4">
+                            <div class="ad-banner">
+                                <p class="ad-label">Advertisement</p>
+                                <div class="ad-content">
+                                    <img src="https://via.placeholder.com/300x250/0e0e12/00f3ff?text=Ad+300x250" alt="Advertisement" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="news-header d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="section-title">Latest News</h2>
+                        <div class="news-search">
+                            <div class="search-box">
+                                <i class="bx bx-search"></i>
+                                <input type="text" class="form-control" placeholder="Search news...">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News Articles -->
+                    <div class="news-grid">
+                        <!-- News Item 1 -->
+                        <div class="news-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="https://via.placeholder.com/400x250/0e0e12/00f3ff?text=AI+Security" alt="AI Security" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category-badge tech">Technology</span>
+                                            <span class="date"><i class="bx bx-calendar"></i> Dec 7, 2025</span>
+                                            <span class="views"><i class="bx bx-show"></i> 2.4K</span>
+                                        </div>
+                                        <h3><a href="#">New AI Model Can Detect Zero-Day Malware with 99.7% Accuracy</a></h3>
+                                        <p>Researchers at MIT have developed a revolutionary AI model that can identify previously unknown malware variants with unprecedented accuracy, potentially transforming the cybersecurity landscape.</p>
+                                        <div class="news-footer">
+                                            <a href="#" class="btn btn-read">Read Full Story <i class="bx bx-right-arrow-alt"></i></a>
+                                            <div class="news-tags">
+                                                <span class="tag">AI</span>
+                                                <span class="tag">Malware</span>
+                                                <span class="tag">Research</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- News Item 2 -->
+                        <div class="news-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="https://via.placeholder.com/400x250/0e0e12/00f3ff?text=Ransomware" alt="Ransomware" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category-badge threat">Threat Alert</span>
+                                            <span class="date"><i class="bx bx-calendar"></i> Dec 6, 2025</span>
+                                            <span class="views"><i class="bx bx-show"></i> 5.7K</span>
+                                        </div>
+                                        <h3><a href="#">RansomEx Locker Targets Healthcare Sector in Coordinated Attack</a></h3>
+                                        <p>A new ransomware variant called RansomEx Locker has been identified targeting healthcare organizations across North America, encrypting critical patient records and demanding multimillion-dollar ransoms.</p>
+                                        <div class="news-footer">
+                                            <a href="#" class="btn btn-read">Read Full Story <i class="bx bx-right-arrow-alt"></i></a>
+                                            <div class="news-tags">
+                                                <span class="tag">Ransomware</span>
+                                                <span class="tag">Healthcare</span>
+                                                <span class="tag">Attack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- News Item 3 -->
+                        <div class="news-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="https://via.placeholder.com/400x250/0e0e12/00f3ff?text=Vulnerability" alt="Vulnerability" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category-badge vuln">Vulnerability</span>
+                                            <span class="date"><i class="bx bx-calendar"></i> Dec 5, 2025</span>
+                                            <span class="views"><i class="bx bx-show"></i> 3.2K</span>
+                                        </div>
+                                        <h3><a href="#">Critical Flaw Found in Popular IoT Framework Affects Millions of Devices</a></h3>
+                                        <p>Security researchers have discovered a critical vulnerability in the widely-used OpenIoT framework that could allow attackers to remotely compromise millions of connected devices worldwide.</p>
+                                        <div class="news-footer">
+                                            <a href="#" class="btn btn-read">Read Full Story <i class="bx bx-right-arrow-alt"></i></a>
+                                            <div class="news-tags">
+                                                <span class="tag">IoT</span>
+                                                <span class="tag">Vulnerability</span>
+                                                <span class="tag">Remote Access</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- News Item 4 -->
+                        <div class="news-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="https://via.placeholder.com/400x250/0e0e12/00f3ff?text=Compliance" alt="Compliance" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category-badge policy">Policy</span>
+                                            <span class="date"><i class="bx bx-calendar"></i> Dec 4, 2025</span>
+                                            <span class="views"><i class="bx bx-show"></i> 1.8K</span>
+                                        </div>
+                                        <h3><a href="#">EU Passes Comprehensive Cybersecurity Regulation for Critical Infrastructure</a></h3>
+                                        <p>The European Union has enacted sweeping new cybersecurity regulations requiring operators of critical infrastructure to implement enhanced security measures or face penalties of up to 2% of annual revenue.</p>
+                                        <div class="news-footer">
+                                            <a href="#" class="btn btn-read">Read Full Story <i class="bx bx-right-arrow-alt"></i></a>
+                                            <div class="news-tags">
+                                                <span class="tag">Regulation</span>
+                                                <span class="tag">EU</span>
+                                                <span class="tag">Compliance</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- News Item 5 -->
+                        <div class="news-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="https://via.placeholder.com/400x250/0e0e12/00f3ff?text=Community" alt="Community" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category-badge community">Community</span>
+                                            <span class="date"><i class="bx bx-calendar"></i> Dec 3, 2025</span>
+                                            <span class="views"><i class="bx bx-show"></i> 950</span>
+                                        </div>
+                                        <h3><a href="#">HACKLIDO Community Reaches 1 Million Members Milestone</a></h3>
+                                        <p>The HACKLIDO cybersecurity community has officially reached 1 million registered members, making it one of the largest platforms for security professionals and enthusiasts worldwide.</p>
+                                        <div class="news-footer">
+                                            <a href="#" class="btn btn-read">Read Full Story <i class="bx bx-right-arrow-alt"></i></a>
+                                            <div class="news-tags">
+                                                <span class="tag">Community</span>
+                                                <span class="tag">Milestone</span>
+                                                <span class="tag">Growth</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <nav aria-label="News pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="newsletter-box text-center">
+                        <h3 class="section-title">Stay Updated</h3>
+                        <p class="section-subtitle">Subscribe to our newsletter to receive the latest cybersecurity news and updates</p>
+                        <div class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email address">
+                                <button class="btn btn-cta" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">
+                            <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="footer-logo">
+                        </h3>
+                        <p class="footer-desc">Your ultimate platform for learning cybersecurity, ethical hacking, and penetration testing. Join the community and level up your skills.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../html/challenges.html">Challenges</a></li>
+                            <li><a href="../html/news.html">News</a></li>
+                            <li><a href="../html/blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">CTF Challenges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Bug</a></li>
+                            <li><a href="../html/advertise.html">Advertise</a></li>
+                            <li><a href="../html/sponsors.html">Our Sponsors</a></li>
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="../html/monetization.html">Monetization</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 HACKLIDO. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-tagline">Made with <i class="fas fa-heart text-danger"></i> by the HACKLIDO Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>

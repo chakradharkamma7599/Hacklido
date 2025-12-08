@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - HACKLIDO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/cyberpunk.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-navbar navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/challenges.html"><i class="fas fa-flag me-1"></i>Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/news.html"><i class="fas fa-newspaper me-1"></i>News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/blog.html"><i class="fas fa-blog me-1"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/tutorials.html"><i class="fas fa-graduation-cap me-1"></i>Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/community.html"><i class="fas fa-users me-1"></i>Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/monetization.html"><i class="fas fa-dollar-sign me-1"></i>Monetization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/notifications.html"><i class="fas fa-bell me-1"></i>Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-join" href="../html/auth.html"><i class="fas fa-user-plus me-1"></i>Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Header -->
+    <section class="search-header py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="section-title text-center mb-4">Search Results</h1>
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search for challenges, tutorials, articles..." value="web security">
+                    </div>
+                    <p class="text-center text-muted">Found 24 results for "web security"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section class="search-results py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Filter Tabs -->
+                    <ul class="nav nav-tabs cyber-tabs mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fas fa-all me-2"></i>All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-book me-2"></i>Tutorials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-flag me-2"></i>Challenges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-users me-2"></i>Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-newspaper me-2"></i>News</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Result Items -->
+                    <div class="search-result-item mb-4">
+                        <h3><a href="#">Advanced Web Application Penetration Testing</a></h3>
+                        <div class="result-meta">
+                            <span class="badge bg-primary">Tutorial</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">By CyberNinja</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">Dec 5, 2025</span>
+                        </div>
+                        <p class="mt-2">Comprehensive guide to advanced web application penetration testing techniques including XSS, CSRF, SQL injection, and more. Learn how to identify and exploit vulnerabilities in modern web applications.</p>
+                        <div class="result-tags">
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">OWASP</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result-item mb-4">
+                        <h3><a href="#">Web Security CTF Challenge Series</a></h3>
+                        <div class="result-meta">
+                            <span class="badge bg-success">Challenge</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">Intermediate Level</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">120 solves</span>
+                        </div>
+                        <p class="mt-2">Series of Capture The Flag challenges focused on web security vulnerabilities. Test your skills with realistic scenarios involving XSS, SQL injection, file inclusion, and authentication bypass.</p>
+                        <div class="result-tags">
+                            <span class="tag">CTF</span>
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Vulnerabilities</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result-item mb-4">
+                        <h3><a href="#">Discussion: Best Practices for Web Application Security</a></h3>
+                        <div class="result-meta">
+                            <span class="badge bg-info">Community</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">32 replies</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">Last post: Dec 4, 2025</span>
+                        </div>
+                        <p class="mt-2">Community discussion on best practices for securing web applications. Share your experiences, ask questions, and learn from other security professionals about effective web security strategies.</p>
+                        <div class="result-tags">
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Best Practices</span>
+                            <span class="tag">Community</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result-item mb-4">
+                        <h3><a href="#">Latest Trends in Web Application Security for 2025</a></h3>
+                        <div class="result-meta">
+                            <span class="badge bg-warning">News</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">By SecurityWeekly</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">Dec 3, 2025</span>
+                        </div>
+                        <p class="mt-2">Overview of the latest trends and developments in web application security for 2025. Covers emerging threats, new defense mechanisms, and industry predictions for the coming year.</p>
+                        <div class="result-tags">
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Trends</span>
+                            <span class="tag">Industry News</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result-item mb-4">
+                        <h3><a href="#">Building Secure Web Applications: A Developer's Guide</a></h3>
+                        <div class="result-meta">
+                            <span class="badge bg-primary">Tutorial</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">By DevSecOps Pro</span>
+                            <span class="text-muted mx-2">•</span>
+                            <span class="text-muted">Nov 28, 2025</span>
+                        </div>
+                        <p class="mt-2">Essential guide for developers on building secure web applications from the ground up. Covers secure coding practices, common pitfalls, and implementation of security controls.</p>
+                        <div class="result-tags">
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Secure Coding</span>
+                            <span class="tag">Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Search results pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Related Searches -->
+                    <div class="dashboard-card mb-4">
+                        <div class="card-header">
+                            <h3 class="card-title"><i class="fas fa-search me-2"></i>Related Searches</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="related-searches">
+                                <a href="#" class="related-search-tag">OWASP Top 10</a>
+                                <a href="#" class="related-search-tag">XSS Prevention</a>
+                                <a href="#" class="related-search-tag">SQL Injection</a>
+                                <a href="#" class="related-search-tag">CSRF Protection</a>
+                                <a href="#" class="related-search-tag">Authentication Security</a>
+                                <a href="#" class="related-search-tag">API Security</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advertisement -->
+                    <div class="ad-section mb-4">
+                        <div class="ad-banner">
+                            <p class="ad-label">Advertisement</p>
+                            <div class="ad-content">
+                                <img src="https://via.placeholder.com/300x250/112240/00ff88?text=Ad+300x250" alt="Advertisement" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popular Tags -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3 class="card-title"><i class="fas fa-tags me-2"></i>Popular Tags</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="popular-tags">
+                                <a href="#" class="tag">Penetration Testing</a>
+                                <a href="#" class="tag">Bug Bounty</a>
+                                <a href="#" class="tag">Reverse Engineering</a>
+                                <a href="#" class="tag">Forensics</a>
+                                <a href="#" class="tag">Cryptography</a>
+                                <a href="#" class="tag">Networking</a>
+                                <a href="#" class="tag">Malware Analysis</a>
+                                <a href="#" class="tag">Mobile Security</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">
+                            <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="footer-logo">
+                        </h3>
+                        <p class="footer-desc">Your ultimate platform for learning cybersecurity, ethical hacking, and penetration testing. Join the community and level up your skills.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../html/challenges.html">Challenges</a></li>
+                            <li><a href="../html/news.html">News</a></li>
+                            <li><a href="../html/blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">CTF Challenges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Bug</a></li>
+                            <li><a href="../html/advertise.html">Advertise</a></li>
+                            <li><a href="../html/sponsors.html">Our Sponsors</a></li>
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="../html/monetization.html">Monetization</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 HACKLIDO. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-tagline">Made with <i class="fas fa-heart text-danger"></i> by the HACKLIDO Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - HACKLIDO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/cyberpunk.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-navbar navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/challenges.html"><i class="fas fa-flag me-1"></i>Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/news.html"><i class="fas fa-newspaper me-1"></i>News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/blog.html"><i class="fas fa-blog me-1"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/tutorials.html"><i class="fas fa-graduation-cap me-1"></i>Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/community.html"><i class="fas fa-users me-1"></i>Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/monetization.html"><i class="fas fa-dollar-sign me-1"></i>Monetization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/notifications.html"><i class="fas fa-bell me-1"></i>Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-join" href="../html/auth.html"><i class="fas fa-user-plus me-1"></i>Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">User Profile</h1>
+                    <p class="page-subtitle">View and manage your HACKLIDO profile</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../html/community.html">Community</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="profile-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Profile Sidebar -->
+                <div class="col-lg-4">
+                    <div class="dashboard-card mb-4">
+                        <div class="card-body text-center">
+                            <div class="profile-avatar mb-4">
+                                <img src="https://via.placeholder.com/150x150/0e0e12/00f3ff?text=CN" alt="Profile Picture" class="rounded-circle img-fluid">
+                                <button class="btn btn-sm btn-outline-light mt-3">
+                                    <i class="fas fa-camera me-1"></i>Change Photo
+                                </button>
+                            </div>
+                            
+                            <h2 class="profile-name mb-1">CyberNinja</h2>
+                            <p class="profile-role text-muted mb-3">Security Researcher</p>
+                            
+                            <div class="profile-stats d-flex justify-content-center mb-4">
+                                <div class="stat-item text-center mx-3">
+                                    <div class="stat-value">1.2K</div>
+                                    <div class="stat-label">Points</div>
+                                </div>
+                                <div class="stat-item text-center mx-3">
+                                    <div class="stat-value">24</div>
+                                    <div class="stat-label">Badges</div>
+                                </div>
+                                <div class="stat-item text-center mx-3">
+                                    <div class="stat-value">86</div>
+                                    <div class="stat-label">Posts</div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-badges mb-4">
+                                <h5 class="mb-3">Badges</h5>
+                                <div class="badges-grid">
+                                    <div class="badge-item" title="Web Warrior">
+                                        <i class="fas fa-medal text-warning"></i>
+                                    </div>
+                                    <div class="badge-item" title="Challenge Master">
+                                        <i class="fas fa-trophy text-success"></i>
+                                    </div>
+                                    <div class="badge-item" title="Community Leader">
+                                        <i class="fas fa-crown text-orange"></i>
+                                    </div>
+                                    <div class="badge-item" title="Content Creator">
+                                        <i class="fas fa-pen-nib text-info"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-social">
+                                <h5 class="mb-3">Social Links</h5>
+                                <div class="social-links-profile">
+                                    <a href="#" class="social-link"><i class="bx bxl-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="bx bxl-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="bx bxl-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Advertisement -->
+                    <div class="ad-section">
+                        <div class="ad-banner">
+                            <p class="ad-label">Advertisement</p>
+                            <div class="ad-content">
+                                <img src="https://via.placeholder.com/300x250/112240/00ff88?text=Ad+300x250" alt="Advertisement" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Profile Main Content -->
+                <div class="col-lg-8">
+                    <!-- Profile Tabs -->
+                    <ul class="nav nav-tabs cyber-tabs mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#overview" data-bs-toggle="tab">
+                                <i class="fas fa-user me-2"></i>Overview
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#activity" data-bs-toggle="tab">
+                                <i class="fas fa-history me-2"></i>Activity
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#posts" data-bs-toggle="tab">
+                                <i class="fas fa-comments me-2"></i>Posts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#settings" data-bs-toggle="tab">
+                                <i class="fas fa-cog me-2"></i>Settings
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-pane fade show active" id="overview">
+                            <div class="dashboard-card mb-4">
+                                <div class="card-header">
+                                    <h3 class="card-title mb-0"><i class="fas fa-user-circle me-2"></i>About Me</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-4">Passionate cybersecurity researcher with 5+ years of experience in penetration testing and vulnerability assessment. Specialized in web application security and reverse engineering. Love sharing knowledge with the community and mentoring newcomers to the field.</p>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5 class="mb-3">Skills</h5>
+                                            <div class="skills-list">
+                                                <span class="skill-tag">Penetration Testing</span>
+                                                <span class="skill-tag">Web Security</span>
+                                                <span class="skill-tag">Reverse Engineering</span>
+                                                <span class="skill-tag">Python</span>
+                                                <span class="skill-tag">JavaScript</span>
+                                                <span class="skill-tag">Network Security</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="mb-3">Interests</h5>
+                                            <div class="interests-list">
+                                                <span class="interest-tag">Bug Bounty</span>
+                                                <span class="interest-tag">CTF Competitions</span>
+                                                <span class="interest-tag">Malware Analysis</span>
+                                                <span class="interest-tag">OSINT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="dashboard-card h-100">
+                                        <div class="card-header">
+                                            <h3 class="card-title mb-0"><i class="fas fa-chart-line me-2"></i>Statistics</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="stat-item mb-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Challenges Solved</span>
+                                                    <span class="fw-bold">24/156</span>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar" role="progressbar" style="width: 15%"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="stat-item mb-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Tutorials Completed</span>
+                                                    <span class="fw-bold">18/42</span>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 43%"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="stat-item">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Forum Posts</span>
+                                                    <span class="fw-bold">86</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="dashboard-card h-100">
+                                        <div class="card-header">
+                                            <h3 class="card-title mb-0"><i class="fas fa-award me-2"></i>Recent Achievements</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="achievement-item mb-3">
+                                                <div class="d-flex">
+                                                    <div class="achievement-icon bg-warning me-3">
+                                                        <i class="fas fa-medal"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="mb-1">Web Warrior</h5>
+                                                        <p class="mb-0 text-muted">Earned for solving 10 web challenges</p>
+                                                        <small class="text-muted">2 days ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="achievement-item mb-3">
+                                                <div class="d-flex">
+                                                    <div class="achievement-icon bg-success me-3">
+                                                        <i class="fas fa-trophy"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="mb-1">First Article</h5>
+                                                        <p class="mb-0 text-muted">Published first community article</p>
+                                                        <small class="text-muted">1 week ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="achievement-item">
+                                                <div class="d-flex">
+                                                    <div class="achievement-icon bg-info me-3">
+                                                        <i class="fas fa-comments"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="mb-1">Top Contributor</h5>
+                                                        <p class="mb-0 text-muted">Top 10 forum contributor</p>
+                                                        <small class="text-muted">2 weeks ago</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Activity Tab -->
+                        <div class="tab-pane fade" id="activity">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title mb-0"><i class="fas fa-history me-2"></i>Recent Activity</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="activity-list">
+                                        <div class="activity-item mb-4">
+                                            <div class="d-flex">
+                                                <div class="activity-icon bg-primary me-3">
+                                                    <i class="fas fa-comment"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="mb-1">Replied to Discussion</h5>
+                                                    <p class="mb-1">Posted a reply in "Best practices for preventing CSRF attacks"</p>
+                                                    <small class="text-muted">2 hours ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="activity-item mb-4">
+                                            <div class="d-flex">
+                                                <div class="activity-icon bg-success me-3">
+                                                    <i class="fas fa-flag"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="mb-1">Challenge Solved</h5>
+                                                    <p class="mb-1">Successfully completed "Advanced SQL Injection" challenge</p>
+                                                    <small class="text-muted">5 hours ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="activity-item mb-4">
+                                            <div class="d-flex">
+                                                <div class="activity-icon bg-warning me-3">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="mb-1">Badge Earned</h5>
+                                                    <p class="mb-1">Earned "Web Warrior" badge</p>
+                                                    <small class="text-muted">1 day ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="activity-item mb-4">
+                                            <div class="d-flex">
+                                                <div class="activity-icon bg-info me-3">
+                                                    <i class="fas fa-file-alt"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="mb-1">Article Published</h5>
+                                                    <p class="mb-1">Published "Understanding XSS Payloads" to community blog</p>
+                                                    <small class="text-muted">3 days ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="activity-item">
+                                            <div class="d-flex">
+                                                <div class="activity-icon bg-secondary me-3">
+                                                    <i class="fas fa-user-plus"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="mb-1">Joined Community</h5>
+                                                    <p class="mb-1">Became a member of HACKLIDO community</p>
+                                                    <small class="text-muted">3 months ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Posts Tab -->
+                        <div class="tab-pane fade" id="posts">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title mb-0"><i class="fas fa-comments me-2"></i>Forum Posts</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="post-item mb-4 pb-4 border-bottom">
+                                        <h5><a href="#" class="text-decoration-none">Best practices for preventing CSRF attacks in modern web apps</a></h5>
+                                        <p class="text-muted mb-2">Posted in Web Application Security • 2 hours ago</p>
+                                        <p>In my recent pentest, I discovered that many developers still don't understand the importance of proper CSRF protection...</p>
+                                        <div class="post-stats">
+                                            <span class="me-3"><i class="fas fa-thumbs-up me-1"></i> 24</span>
+                                            <span class="me-3"><i class="fas fa-comment me-1"></i> 8</span>
+                                            <span><i class="fas fa-eye me-1"></i> 142</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="post-item mb-4 pb-4 border-bottom">
+                                        <h5><a href="#" class="text-decoration-none">How to properly sanitize user input in PHP applications</a></h5>
+                                        <p class="text-muted mb-2">Posted in Secure Coding • 1 day ago</p>
+                                        <p>Input sanitization is crucial for preventing various injection attacks. Here's my approach to handling user input securely...</p>
+                                        <div class="post-stats">
+                                            <span class="me-3"><i class="fas fa-thumbs-up me-1"></i> 31</span>
+                                            <span class="me-3"><i class="fas fa-comment me-1"></i> 12</span>
+                                            <span><i class="fas fa-eye me-1"></i> 205</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="post-item">
+                                        <h5><a href="#" class="text-decoration-none">Understanding the OWASP Top 10 for 2025</a></h5>
+                                        <p class="text-muted mb-2">Posted in News & Updates • 1 week ago</p>
+                                        <p>The new OWASP Top 10 has some interesting additions. Let's discuss what's changed and what it means for our security practices...</p>
+                                        <div class="post-stats">
+                                            <span class="me-3"><i class="fas fa-thumbs-up me-1"></i> 42</span>
+                                            <span class="me-3"><i class="fas fa-comment me-1"></i> 18</span>
+                                            <span><i class="fas fa-eye me-1"></i> 312</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Settings Tab -->
+                        <div class="tab-pane fade" id="settings">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title mb-0"><i class="fas fa-user-cog me-2"></i>Profile Settings</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">Username</label>
+                                                    <input type="text" class="form-control" value="CyberNinja">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" class="form-control" value="cyberninja@example.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" value="Cyber">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" value="Ninja">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label class="form-label">Bio</label>
+                                            <textarea class="form-control" rows="4">Passionate cybersecurity researcher with 5+ years of experience in penetration testing and vulnerability assessment. Specialized in web application security and reverse engineering.</textarea>
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label class="form-label">Role/Title</label>
+                                            <input type="text" class="form-control" value="Security Researcher">
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label class="form-label">Skills</label>
+                                            <input type="text" class="form-control" value="Penetration Testing, Web Security, Reverse Engineering, Python, JavaScript, Network Security">
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label class="form-label">Interests</label>
+                                            <input type="text" class="form-control" value="Bug Bounty, CTF Competitions, Malware Analysis, OSINT">
+                                        </div>
+                                        
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">Twitter</label>
+                                                    <input type="text" class="form-control" placeholder="Twitter username">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">LinkedIn</label>
+                                                    <input type="text" class="form-control" placeholder="LinkedIn profile URL">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">GitHub</label>
+                                                    <input type="text" class="form-control" placeholder="GitHub username">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-label">Website</label>
+                                                    <input type="text" class="form-control" placeholder="Personal website URL">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label class="form-label">Profile Visibility</label>
+                                            <select class="form-select">
+                                                <option>Public</option>
+                                                <option>Members Only</option>
+                                                <option>Private</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-outline-danger me-2">Reset</button>
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">
+                            <img src="https://hacklido.com/assets/logo-pcrv1dy0.png" alt="HACKLIDO" class="footer-logo">
+                        </h3>
+                        <p class="footer-desc">Your ultimate platform for learning cybersecurity, ethical hacking, and penetration testing. Join the community and level up your skills.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../html/challenges.html">Challenges</a></li>
+                            <li><a href="../html/news.html">News</a></li>
+                            <li><a href="../html/blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">CTF Challenges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Bug</a></li>
+                            <li><a href="../html/advertise.html">Advertise</a></li>
+                            <li><a href="../html/sponsors.html">Our Sponsors</a></li>
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="../html/monetization.html">Monetization</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">&copy; 2025 HACKLIDO. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-tagline">Made with <i class="fas fa-heart text-danger"></i> by the HACKLIDO Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>
