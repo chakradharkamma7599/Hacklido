@@ -15,7 +15,7 @@
     --neon-purple: #bc13fe;
     --electric-blue: #0066ff; /* New blue accent */
     --electric-green: #00ff41; /* New green accent */
-    --electric-orange: #FF6B35; /* New orange accent for better contrast */
+    --electric-orange: #87CEEB; /* Sky blue color */
     
     /* Fonts */
     --font-primary: 'Inter', sans-serif;
@@ -60,7 +60,7 @@ a {
 }
 
 a:hover {
-    color: var(--electric-orange); /* Changed to orange for better contrast */
+    color: var(--electric-orange); /* Changed to sky blue for better contrast */
 }
 
 img {
@@ -101,7 +101,7 @@ p {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, var(--electric-cyan), var(--electric-orange)); /* Changed from purple to orange for better contrast */
+    background: linear-gradient(90deg, var(--electric-cyan), var(--electric-orange)); /* Changed from purple to sky blue for better contrast */
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
@@ -136,7 +136,7 @@ p {
 }
 
 .navbar-brand i {
-    color: var(--electric-orange); /* Changed from purple to orange for better contrast */
+    color: var(--electric-orange); /* Changed from purple to sky blue for better contrast */
 }
 
 .navbar-brand:hover {
@@ -177,8 +177,8 @@ p {
 
 .nav-link:not(.btn-join):hover,
 .nav-link:not(.btn-join).active {
-    color: var(--electric-orange) !important; /* Changed to orange */
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
+    color: var(--electric-orange) !important; /* Changed to sky blue */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
 }
 
 .nav-link:not(.btn-join):hover::after,
@@ -200,8 +200,8 @@ p {
 }
 
 .btn-join:hover {
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
-    color: var(--electric-orange) !important; /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
+    color: var(--electric-orange) !important; /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -294,7 +294,7 @@ p {
 }
 
 .hero-title .highlight {
-    color: var(--electric-orange); /* Changed to orange for better contrast */
+    color: var(--electric-orange); /* Changed to sky blue for better contrast */
     text-shadow: none; /* Removed glow for performance */
     position: relative;
     display: inline-block;
@@ -338,8 +338,8 @@ p {
 }
 
 .btn-primary:hover {
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateY(-1px);
 }
 
@@ -347,12 +347,12 @@ p {
     border: 2px solid var(--electric-orange);
     color: var(--electric-orange);
     font-family: var(--font-mono);
-    box-shadow: 0 0 10px rgba(255, 107, 53, 0.3); /* Orange glow */
+    box-shadow: 0 0 10px rgba(135, 206, 235, 0.3); /* Sky blue glow */
 }
 
 .btn-outline-light:hover {
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
 }
 
 .hero-stats {
@@ -374,7 +374,7 @@ p {
 }
 
 .stat-item:hover {
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
     transform: translateY(-1px);
 }
 
@@ -575,7 +575,7 @@ p {
 }
 
 .content-card:hover {
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
 }.content-image {
     position: relative;
     overflow: hidden;
@@ -648,7 +648,7 @@ p {
 }
 
 .btn-read-more:hover {
-    color: var(--electric-orange); /* Changed to orange */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateX(1px); /* Minimal transformation for performance */
 }
 
@@ -669,7 +669,7 @@ p {
 }
 
 .topic-card:hover {
-    border-color: var(--electric-orange); /* Changed to orange for better contrast */
+    border-color: var(--electric-orange); /* Changed to sky blue for better contrast */
 }
 .topic-icon {
     font-size: 3rem;
@@ -699,7 +699,7 @@ p {
 }
 
 .topic-link:hover {
-    color: var(--electric-orange); /* Changed to orange */
+    color: var(--electric-orange); /* Changed to sky blue */
 }
 
 /* ========== CTA SECTION ========== */
@@ -734,8 +734,8 @@ p {
 }
 
 .btn-cta:hover {
-    background: rgba(255, 107, 53, 0.1); /* Changed to orange */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Changed to sky blue */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateY(-1px); /* Reduced transformation */
 }/* ========== FOOTER ========== */
 .footer {
@@ -781,8 +781,8 @@ p {
 }
 
 .social-links a:hover {
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
 }.footer-widget-title {
     font-size: 1.1rem;
     color: var(--off-white);
@@ -851,7 +851,7 @@ p {
 }
 
 .scroll-top:hover {
-    background: rgba(255, 107, 53, 0.2); /* Orange background */
+    background: rgba(135, 206, 235, 0.2); /* Sky blue background */
 }/* ========== CYBERPUNK LOADING ANIMATION ========== */
 .cyber-loader {
     display: inline-block;
@@ -964,7 +964,7 @@ p {
 
 .sponsor-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -985,8 +985,8 @@ p {
 }
 
 .sponsor-tier.platinum {
-    background: rgba(255, 107, 53, 0.2); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.2); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
 }
 
 .sponsor-tier.gold {
@@ -1267,7 +1267,7 @@ p {
 
 .challenge-card:hover {
     transform: translateY(-1px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -1310,8 +1310,8 @@ p {
 }
 
 .difficulty-badge.expert {
-    background: rgba(255, 107, 53, 0.2); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.2); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
 }
 
 .points {
@@ -1381,8 +1381,8 @@ p {
 }
 
 .btn-challenge:hover {
-    background: rgba(255, 107, 53, 0.1); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateY(-1px);
 }
 
@@ -1402,7 +1402,7 @@ p {
 }
 
 .tag:hover {
-    background: var(--electric-orange); /* Changed to orange */
+    background: var(--electric-orange); /* Changed to sky blue */
     color: var(--void-black);
     transform: translateY(-1px);
 }
@@ -1419,7 +1419,7 @@ p {
 
 .news-item:hover {
     transform: translateY(-1px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
 }
 
 .news-thumbnail {
@@ -1479,8 +1479,8 @@ p {
 }
 
 .category-badge.community {
-    background: rgba(255, 107, 53, 0.2); /* Orange background */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.2); /* Sky blue background */
+    color: var(--electric-orange); /* Changed to sky blue */
 }
 
 .news-content h3 {
@@ -1519,7 +1519,7 @@ p {
 }
 
 .btn-read:hover {
-    color: var(--electric-orange); /* Changed to orange */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateX(1px); /* Reduced transformation for performance */
 }
 
@@ -2125,7 +2125,7 @@ p {
 
 .tutorial-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -2248,7 +2248,7 @@ p {
 }
 
 .rating i {
-    color: var(--electric-orange); /* Changed to orange */
+    color: var(--electric-orange); /* Changed to sky blue */
     font-size: 0.9rem;
 }
 
@@ -2259,7 +2259,7 @@ p {
 }
 
 .btn-tutorial {
-    background: linear-gradient(135deg, var(--electric-cyan), var(--electric-orange)); /* Changed to orange */
+    background: linear-gradient(135deg, var(--electric-cyan), var(--electric-orange)); /* Changed to sky blue */
     color: var(--void-black);
     border: none;
     font-weight: 600;
@@ -2271,7 +2271,7 @@ p {
 
 .btn-tutorial:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3); /* Orange glow */
+    box-shadow: 0 5px 15px rgba(135, 206, 235, 0.3); /* Sky blue glow */
 }
 
 /* ========== LEARNING PATHS ========== */
@@ -2286,7 +2286,7 @@ p {
 
 .path-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -2389,7 +2389,7 @@ p {
 
 .stat-box:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -2427,7 +2427,7 @@ p {
 
 .value-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -2435,7 +2435,7 @@ p {
     width: 80px;
     height: 80px;
     margin: 0 auto 1.5rem;
-    background: linear-gradient(135deg, var(--electric-cyan), var(--electric-orange)); /* Changed to orange */
+    background: linear-gradient(135deg, var(--electric-cyan), var(--electric-orange)); /* Changed to sky blue */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2516,7 +2516,7 @@ p {
 }
 
 .team-social a:hover {
-    background: var(--electric-orange); /* Changed from purple to orange for better contrast */
+    background: var(--electric-orange); /* Changed from purple to sky blue for better contrast */
     transform: translateY(-3px);
 }
 
@@ -2611,7 +2611,7 @@ p {
 
 .contact-info-item:hover {
     transform: translateX(2px); /* Reduced transformation for performance */
-    border-color: var(--electric-orange); /* Changed to orange */
+    border-color: var(--electric-orange); /* Changed to sky blue */
 }
 
 .contact-icon {
@@ -2829,8 +2829,8 @@ p {
 }
 
 .btn-auth:hover {
-    background: rgba(255, 107, 53, 0.1); /* Changed to orange */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Changed to sky blue */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateY(-1px); /* Reduced transformation for performance */
     box-shadow: none; /* Removed glow for performance */
 }
@@ -2863,9 +2863,9 @@ p {
 }
 
 .auth-social .btn-social:hover {
-    background: rgba(255, 107, 53, 0.1); /* Changed to orange */
-    border-color: var(--electric-orange); /* Changed to orange */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Changed to sky blue */
+    border-color: var(--electric-orange); /* Changed to sky blue */
+    color: var(--electric-orange); /* Changed to sky blue */
     transform: translateY(-1px); /* Reduced transformation for performance */
     box-shadow: none; /* Removed glow for performance */
 }
@@ -2947,7 +2947,7 @@ dashboard-subtitle {
 
 .stat-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: rgba(255, 107, 53, 0.3); /* Changed to orange */
+    border-color: rgba(135, 206, 235, 0.3); /* Changed to sky blue */
     box-shadow: none; /* Removed glow for performance */
 }
 
@@ -2980,7 +2980,7 @@ dashboard-subtitle {
 }
 
 .dashboard-card:hover {
-    border-color: rgba(255, 107, 53, 0.2); /* Changed to orange */
+    border-color: rgba(135, 206, 235, 0.2); /* Changed to sky blue */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for performance */
 }
 
@@ -3084,9 +3084,9 @@ dashboard-subtitle {
 }
 
 .action-btn:hover {
-    background: rgba(255, 107, 53, 0.1); /* Changed to orange */
-    border-color: rgba(255, 107, 53, 0.3); /* Changed to orange */
-    color: var(--electric-orange); /* Changed to orange */
+    background: rgba(135, 206, 235, 0.1); /* Changed to sky blue */
+    border-color: rgba(135, 206, 235, 0.3); /* Changed to sky blue */
+    color: var(--electric-orange); /* Changed to sky blue */
     text-decoration: none;
     transform: translateY(-1px); /* Reduced transformation for performance */
     box-shadow: none; /* Removed glow for performance */
@@ -3166,7 +3166,7 @@ dashboard-subtitle {
 
 .monetization-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: rgba(255, 107, 53, 0.2); /* Changed to orange */
+    border-color: rgba(135, 206, 235, 0.2); /* Changed to sky blue */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for performance */
 }
 
@@ -3258,7 +3258,7 @@ dashboard-subtitle {
 
 .testimonial-card:hover {
     transform: translateY(-2px); /* Reduced transformation for performance */
-    border-color: rgba(255, 107, 53, 0.2); /* Changed to orange */
+    border-color: rgba(135, 206, 235, 0.2); /* Changed to sky blue */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for performance */
 }
 
@@ -3850,11 +3850,11 @@ dashboard-subtitle {
 }
 
 .highlight {
-    color: var(--electric-orange); /* Changed to orange for better contrast */
+    color: var(--electric-orange); /* Changed to sky blue for better contrast */
     text-shadow: none; /* Removed glow for performance */
 }
 .text-neon-purple {
-    color: var(--electric-orange); /* Changed to orange for better contrast */
+    color: var(--electric-orange); /* Changed to sky blue for better contrast */
 }
 
 .cyber-hover {
@@ -3878,11 +3878,11 @@ dashboard-subtitle {
     color: var(--electric-orange);
 }
 
-.bg-orange {
+.bg-skyblue {
     background-color: var(--electric-orange);
 }
 
-.bg-orange {
+.bg-skyblue {
     background-color: var(--electric-orange);
 }
 
